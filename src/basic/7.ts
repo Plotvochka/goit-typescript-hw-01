@@ -3,7 +3,10 @@ interface Page {
   likes: number;
   accounts: string[];
   status: string;
-  details?: {};
+  details?: {
+    createAt: string | number | Date;
+    updateAt: string | number | Date;
+  };
 }
 
 const page1: Page = {
